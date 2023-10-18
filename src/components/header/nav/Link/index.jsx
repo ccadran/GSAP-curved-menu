@@ -7,6 +7,7 @@ import { slide } from "../../anim";
 export default function index({ data }) {
   return (
     <motion.div
+      custom={data.index}
       variants={slide}
       animate="enter"
       exit="exit"

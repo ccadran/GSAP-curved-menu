@@ -39,6 +39,12 @@ export default function index() {
             return <Link data={{ ...item, index }} />;
           })}
         </div>
+        <div className={styles.footer}>
+          <a>Awwwards</a>
+          <a>Instagram</a>
+          <a>Dribble</a>
+          <a>Linkedin</a>
+        </div>
       </div>
     </motion.div>
   );

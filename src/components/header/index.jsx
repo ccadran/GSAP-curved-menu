@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import styles from "./style.module.scss";
 import Nav from "./nav";
+import { AnimatePresence } from "framer-motion";
 
 export default function index() {
   const [isActive, setIsActive] = useState(false);
@@ -18,7 +19,7 @@ export default function index() {
           className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`}
         ></div>
       </div>
-      {isActive && <Nav />}
+      <AnimatePresence mode="wait">{isActive && <Nav />}</AnimatePresence>
     </>
   );
 }
