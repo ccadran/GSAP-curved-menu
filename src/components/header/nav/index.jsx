@@ -1,5 +1,6 @@
 import styles from "./style.module.scss";
 import Link from "./Link";
+import Curve from "./Curve";
 import { motion } from "framer-motion";
 import { menuSlide } from "../anim";
 
@@ -46,6 +47,7 @@ export default function index() {
           <a>Linkedin</a>
         </div>
       </div>
+      <Curve />
     </motion.div>
   );
 }
